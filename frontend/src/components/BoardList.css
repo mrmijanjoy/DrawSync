@@ -1,0 +1,131 @@
+.board-list-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  .board-list-container h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .board-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .board-list-container ul li {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .board-list-container ul li:hover {
+    background-color: #bdc3c7;
+    border-color: #95a5a6;
+    transform: scale(1.03);
+  }
+  
+  .board-list-container ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    flex-grow: 1;
+  }
+  
+  .board-list-container ul li a:hover {
+    color: #2980b9;
+  }
+  
+  .board-list-container ul li .delete-button {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .board-list-container ul li .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .board-list-container .input-container {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .board-list-container input[type="text"] {
+    padding: 12px;
+    font-size: 1rem;
+    flex-grow: 1;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .board-list-container input[type="text"]:focus {
+    outline: none;
+    border-color: #2980b9;
+  }
+  
+  .board-list-container button {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .board-list-container button:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .board-list-container {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    .board-list-container h1 {
+      font-size: 2rem;
+    }
+  
+    .board-list-container .input-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .board-list-container input[type="text"] {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  
+    .board-list-container button {
+      padding: 12px;
+      font-size: 1rem;
+    }
+  }
+  

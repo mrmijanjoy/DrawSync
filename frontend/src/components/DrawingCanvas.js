@@ -38,7 +38,7 @@ const DrawingCanvas = ({ drawings, onSave, tool, color }) => {
   const exportToImage = () => {
     const uri = stageRef.current.toDataURL();
     const link = document.createElement('a');
-    link.download = 'drawing.png';
+    link.download = 'drawing.jpg';
     link.href = uri;
     document.body.appendChild(link);
     link.click();
@@ -55,7 +55,7 @@ const DrawingCanvas = ({ drawings, onSave, tool, color }) => {
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         ref={stageRef}
-        style={{ border: '1px solid black' }}
+        style={{ border: 'none' }} 
       >
         <Layer>
           {lines.map((line, i) => (

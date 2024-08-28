@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getBoards, createBoard } from '../api';
+import './BoardList.css'; 
 
 const BoardList = () => {
   const [boards, setBoards] = useState([]);
@@ -36,7 +37,7 @@ const BoardList = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="board-list-container">
       <h1>Available Boards</h1>
       <ul>
         {boards && boards.length > 0 ? (
@@ -49,7 +50,7 @@ const BoardList = () => {
           <p>No boards available.</p>
         )}
       </ul>
-      <div style={{ marginTop: '20px' }}>
+      <div className="input-container">
         <input
           type="text"
           placeholder="New Board Name"

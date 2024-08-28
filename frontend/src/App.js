@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BoardList from './components/BoardList';
 import Board from './components/Board';
+import './App.css';
 
 const App = () => {
   return (
